@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>                                  <!-- cabeza: etiquetas informativas -->
+        <meta charset="utf-8">              <!-- definir la biblioteca de idiomas-->
+        <meta name="viewport" content="width=device-width">
+        <title>cripter</title>      <!--definir la etiqueta de la pagima-->
+        <link REL="stylesheet" href="reset.css">     <!--resetea todos los parametros de estilos -->
+        <link rel="stylesheet" href="style.css">    <!--llaado al css de style-->
+        <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+        <script src="scrip.js"></script>
+    </head>
+<body>
+    <header>                <!--encabezado-->
+        <!--logo-->
+        <img src="img/Vector.png" alt="logo alura">
+    </header>
+
+    <main>                  <!--cuerpo-->
+        <!-- seccion de encriptado-->
+        <section class="intext">
+            <!--agregar area de texto-->
+            <textarea class="textoingresado" id="textoingresado" cols="70" rows="10" type="text" placeholder="ingrese el texto aqui"></textarea>
+            <!-- ingresar parafo de advertencia-->
+            <p>⚠ Sólo letras minúsculas y sin acentos</p>
+            <div class="botones">
+                <!--crear los botones con llamado al scrip-->
+                <button type="button" id="botonencriptar" onclick="encriptar()"> ENCRIPTAR</button>
+                <button type="button" id="botondesencriptar" onclick="desencriptar()">DESENCRIPTAR</button>
+            </div>
+        </section>
+        <!-- seccion de encriptado-->
+        <section class="outtext">
+            <!--crear area de salida de texto-->
+            <textarea class="textoegresado" id="textoegresado" cols="40" rows="10" type="text"></textarea>
+            <!--ingresar imagen del muñeco alura-->
+            <div class="textimg">
+                <img  class="imagenkali" src="img/kali.png" alt="logo kali">
+            <div class="textos" id="textos">
+                <!--textos-->
+                <p><strong>Ningun mensaje fue encontrado</strong></p>
+                <p>ingresa el mensaje que desees encriptar o desencriptar.</p>
+            </div>
+            <div class="botones">
+                <!--crear los botones con llamado al scrip-->
+                <button class="bcopia" type="button" id="copiartexto" onclick="copiar()">COPIAR</button>
+            </div>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>                <!--pie de pagina -->
+        <img class="imgfooter" src="img/code.png" alt="logo code">
+        <p class="copyright"><strong> &copy Copyright Jc-Legion 2023</strong></p>
+    </footer>    
+</body>
+</html>
